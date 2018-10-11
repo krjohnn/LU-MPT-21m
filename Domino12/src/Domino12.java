@@ -12,10 +12,9 @@ public class Domino12 {
 		x = scanner.nextInt();
 		
 //		x = Integer.parseInt(args[0]); // Input param, player count
-		c = 12;
+//		c = 12;
 		int count = 1;
-		System.out.println("a \n");
-		for(int i=0; i<=12; i++, c--) {
+		for(int i=0; i<=12; i++) {
 			for(int j=i; j<=12; j++) {
 				System.out.println(count+": "+j+"-"+i+"\n");
 				count++;
