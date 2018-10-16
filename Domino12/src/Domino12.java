@@ -100,8 +100,6 @@ public class Domino12 {
 			System.out.print("\n");
 //			System.out.println(i);
 		}
-		
 		return;
 	}
-
 }
