@@ -37,7 +37,7 @@ public class Domino12 {
 		
 		x = Integer.parseInt(args[0]); // Input param, player count
 
-		// Domino Piece generator
+		/* Domino Piece generator */
 		
 		List<Piece> Set = new ArrayList<Piece>();
 		
@@ -64,5 +64,5 @@ public class Domino12 {
 		}
 		return;
 	}
-
+	
 }
