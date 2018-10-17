@@ -41,11 +41,9 @@ public class Domino12 {
 		
 		List<Piece> Set = new ArrayList<Piece>();
 		
-		int count = 0;
 		for(int i=0; i<=12; i++) {
 			for(int j=i; j<=12; j++) {
 				Set.add(new Piece(j,i));
-				count++;
 			}
 		}
 		
@@ -53,7 +51,6 @@ public class Domino12 {
 		
 		/*Player generate*/
 		int piecesPerPlayer = (Set.size()-Set.size()%x)/x;
-		int offset = 0;
 		for(int i=1; i<=x; i++) {
 			System.out.print(i+".speletajam ir:");
 			for(int j=0; j<piecesPerPlayer; j++) {
