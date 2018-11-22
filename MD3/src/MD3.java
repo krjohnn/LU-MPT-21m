@@ -97,7 +97,9 @@ class LielsSkaitlis {
     		this.skaitlisBi = new BigInteger(this.skaitlis);
     	} else {
         	this.skaitlis = new StringBuffer(skaitlis).reverse().toString();
-        	this.skaitlis = skaitlis.replaceFirst("^0*", "");
+        	if(skaitlis.length()!=1) {
+        		this.skaitlis = skaitlis.replaceFirst("^0*", "");
+        	}
 //        	System.out.println(this.skaitlis + " " + this.skaitlisBi);
     		this.skaitlisBi = new BigInteger(this.skaitlis);
     	}
