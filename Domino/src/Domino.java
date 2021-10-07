@@ -13,7 +13,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-public class Domino12 {
+public class Domino {
 	
 	public static class Piece {
 		 private int first_q; //value of the first quadrant
@@ -41,8 +41,8 @@ public class Domino12 {
 		
 		List<Piece> Set = new ArrayList<Piece>();
 		
-		for(int i=0; i<=12; i++) {
-			for(int j=i; j<=12; j++) {
+		for(int i=0; i<=9; i++) {
+			for(int j=i; j<=9; j++) {
 				Set.add(new Piece(j,i));
 			}
 		}
