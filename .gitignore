@@ -1,4 +1,8 @@
-/MD1/.idea/
-MD1/MD1.iml
-MD1/out/production/MD1/MD1.class
-MD1/MD1.iml
+# Binaries
+**/out
+
+# IDE 
+**/.idea/
+**/.iml
+*.iml
+
