@@ -68,10 +68,11 @@ public class MD4_Lambdas {
 
         System.out.println(" ========= Functional 4 =========");
         // place your code here, to do the same in a functional style
-        List<BigDecimal> filteredNumbers = numbers.stream()
+        BigDecimal total = numbers.stream()
                 .filter(number -> number.compareTo(BigDecimal.valueOf(20)) > 0)
-                .collect(java.util.stream.Collectors.toList());
-        System.out.println(filteredNumbers);
+                .map(number -> number.multiply(BigDecimal.valueOf(0.9)))
+                .reduce(BigDecimal.ZERO, BigDecimal::add);
+        System.out.println("Total of reduced numbers: " + total);
         //
 
     }
