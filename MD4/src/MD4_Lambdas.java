@@ -25,7 +25,7 @@ public class MD4_Lambdas {
 
         System.out.println(" ========= Functional 1 =========");
         // add your code here, to do the same in a functional style
-        //
+        persons.stream().forEach(name -> System.out.print(name + " "));
         //
         System.out.println();
 
@@ -41,7 +41,7 @@ public class MD4_Lambdas {
 
         System.out.println(" ========= Functional 2 =========");
         // place your code here, to do the same in a functional style
-        //
+        persons.stream().forEach(name -> System.out.print(name.toUpperCase() + " "));
         //
         System.out.println();
 
@@ -53,7 +53,7 @@ public class MD4_Lambdas {
 
         System.out.println(" ========= Functional 3 =========");
         // place your code here, to do the same in a functional style
-        //
+        persons.stream().forEach(name -> System.out.print(name.length() + " "));
         //
         System.out.println();
 
@@ -68,7 +68,10 @@ public class MD4_Lambdas {
 
         System.out.println(" ========= Functional 4 =========");
         // place your code here, to do the same in a functional style
-        //
+        List<BigDecimal> filteredNumbers = numbers.stream()
+                .filter(number -> number.compareTo(BigDecimal.valueOf(20)) > 0)
+                .collect(java.util.stream.Collectors.toList());
+        System.out.println(filteredNumbers);
         //
 
     }
